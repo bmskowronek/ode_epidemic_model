@@ -355,7 +355,7 @@ df = pd.DataFrame(generated_data)
 
 initial_guess = [0.3, 1/10, 1/7, 1/90, 0.15, 0.02, 0.01, 0.1, 0.3, 1/10, 1/14, 1/14]
 
-
+''' does not work/stuck in a loop
 #PREDICTION USING OPTIMIZATION
 def objective_function(params, t, I_observed):
     beta, sigma, gamma, rho, eta, mu, xi, alpha, delta, epsilon, theta, lambada = params
@@ -442,7 +442,7 @@ ss_tot = np.sum((I_observed - np.mean(I_observed))**2)
 r_squared = 1 - (ss_res / ss_tot)
 
 print(f"R-squared: {r_squared}")
-
+'''
 
 
 
